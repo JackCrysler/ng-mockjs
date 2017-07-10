@@ -1,0 +1,18 @@
+html,body{
+    height: 100%;
+}
+div[ui-view]{
+    height: 100%;}
+.left-side{
+    background:#29282e;
+    width:279px;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+.right-side{
+    margin-left: 279px;
+    height: 100%;
+}

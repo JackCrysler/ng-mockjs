@@ -1,0 +1,42 @@
+<h1 ng-click="test()">活动管理</h1>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>活动</td>
+        <td>地点</td>
+        <td>起始日期</td>
+        <td>结束日期</td>
+        <td>状态</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="x in list">
+        <td><input type="checkbox"></td>
+        <td>{{x.name}}</td>
+        <td>{{x.locationName}}</td>
+        <td>{{x.startDate}}</td>
+        <td>{{x.endDate}}</td>
+        <td>{{x.status}}</td>
+    </tr>
+    </tbody>
+</table>
+<nav aria-label="Page navigation">
+    <ul class="pagination myNav">
+        <li>
+            <a href="" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li><a href="">1</a></li>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        <li><a href="">4</a></li>
+        <li><a href="">5</a></li>
+        <li>
+            <a href="" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>

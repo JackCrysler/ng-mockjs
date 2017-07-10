@@ -1,0 +1,39 @@
+<div class="col-md-12">
+    <h2>基本信息</h2>
+</div>
+<div class="col-md-6">
+    <label for="">责任人</label>
+    <div class="dropdown pull-right responsibleWrap">
+        <button id="responsible" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown trigger
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="responsible">
+            <li ng-repeat="x in responsiblelist"><a href="">{{x}}</a></li>
+        </ul>
+    </div>
+    <input type="text" class="form-control responsible" ng-model="responsible" readonly>
+</div>
+<div class="col-md-6">
+    <label for="">责任人单位</label>
+    <div class="dropdown pull-right responsibleCompanyWrap">
+        <button id="responsibleCompany" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown trigger
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="responsibleCompany">
+            <li ng-repeat="x in responsibleComlist"><a href="">{{x}}</a></li>
+        </ul>
+    </div>
+    <input type="text" class="form-control responsibleCompany" ng-model="responsibleCompany" readonly>
+</div>
+<div class="col-md-12">
+    <label for="">温馨提示</label>
+    <input type="text" class="form-control" ng-model="remind">
+</div>
+<div class="col-md-12 upload">
+    <upload-image index="1"></upload-image>
+</div>
+<div class="col-md-12 text-center">
+    <button class="btn btn-primary btn-lg" ng-click="saveAndPublic()">保存并发布</button>
+</div>
